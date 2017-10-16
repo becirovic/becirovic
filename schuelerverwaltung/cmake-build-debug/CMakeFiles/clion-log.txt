@@ -1,0 +1,8 @@
+C:\Users\Media\.CLion2017.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Schule/1718/SEW/schuelerverwaltung
+-- Configuring done
+CMake Error at CMakeLists.txt:7 (add_executable):
+  C_STANDARD is set to invalid value '99;UK'
+
+
+-- Generating done
+-- Build files have been written to: /cygdrive/d/Schule/1718/SEW/schuelerverwaltung/cmake-build-debug
