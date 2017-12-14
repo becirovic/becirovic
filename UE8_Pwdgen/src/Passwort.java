@@ -1,3 +1,4 @@
+import java.io.*;
 
 public class Passwort {
 	String p;
@@ -8,6 +9,13 @@ public class Passwort {
 	
 	private String pwdgen(String p){
 		int i=0;
+		if(p.equals("null")){
+			try{						// *wurde als Lösungsvorschlag von IDEA vorgeschlagen (teilweise im Internet drüber informiert)
+				throw new Exception();
+			}catch (Exception e){
+				e.printStackTrace();
+			}
+		}
 		String[] SplitString;
 		SplitString=p.split(" ");
 		
@@ -28,6 +36,13 @@ public class Passwort {
 	public String toString(){
 		pwd=pwdgen(p);
 		return pwd;
+	}
+	
+	public Passwort() throws Exception{
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br= new BufferedReader(isr);
+		System.out.println("Geben sie den Satz ein aus dem sie ein Passwort generieren wollen.");
+		p = br.readLine();
 	}
 
 }
